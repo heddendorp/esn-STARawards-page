@@ -1,0 +1,88 @@
+<div fxLayout="column" style="min-height: 100%;">
+  <header
+    fxLayout="column"
+    fxLayoutAlign="space-between center"
+    fxLayoutGap="2rem"
+    style="min-height: 40vh;"
+  >
+    <div fxFlexAlign="stretch" fxLayout="row" fxLayoutAlign="space-between">
+      <img alt="ESN logo" height="80px" src="/assets/logos/esn.png" />
+    </div>
+    <h1 class="mat-display-2">ESN STARawards</h1>
+    <!--    <button routerLink="winners">Check out this years winners</button>-->
+
+    <mat-card
+      fxLayout="column"
+      fxLayoutGap="1rem"
+      style="padding: 2rem; min-width: 50vw;"
+    >
+      <h2 class="mat-h2">2020 winners coming soon</h2>
+      <esn-countdown [end]="countDownEnd" fxFlexAlign="center"></esn-countdown>
+      <button color="accent" mat-raised-button routerLink="/winners">
+        Check out the 2020 winners!
+      </button>
+      <p>Previous STARawards</p>
+      <div fxLayout="row" fxLayoutAlign="space-evenly">
+        <button color="primary" mat-stroked-button>2019</button>
+        <button color="primary" mat-stroked-button>2018</button>
+        <button color="primary" mat-stroked-button>2017</button>
+        <button color="primary" mat-stroked-button>2016</button>
+      </div>
+    </mat-card>
+  </header>
+  <main fxFlexAlign="center" fxLayout="row">
+    <div
+      fxLayout="column"
+      fxLayout.gt-sm="row"
+      fxLayoutGap="2rem"
+      style="max-width: 1200px;"
+    >
+      <div>
+        <h2>What are the ESN STARawards?</h2>
+        <p>
+          Pellentesque facilisis faucibus nisl at porta. Duis nec nisl tempor,
+          congue nisi quis, pretium dolor. Quisque sit amet tempus turpis. Nam
+          vel porta ipsum, vitae tempor nunc. Donec euismod lorem id arcu varius
+          dignissim quis ac neque. In sagittis ac massa quis tristique. Donec
+          neque quam, interdum vitae condimentum eu, maximus sed quam. Vivamus
+          semper magna turpis, sit amet mollis neque iaculis a. Praesent tempus
+          quis leo eu suscipit. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Curabitur pharetra diam ut
+          velit efficitur varius. Morbi pretium odio in dapibus venenatis. In
+          venenatis risus justo, in imperdiet turpis placerat a. Maecenas ac
+          imperdiet mauris. Curabitur in aliquet ante. Nulla rhoncus et purus a
+          semper. Cras leo nunc, pretium quis ex at, feugiat facilisis ex. In
+          egestas leo felis, nec aliquam est vestibulum eu. Aliquam placerat,
+          dolor vel facilisis efficitur, ligula metus viverra enim, id dictum
+          lectus ipsum eu sapien. Quisque consectetur felis id dui euismod,
+          vitae aliquet elit tristique. Vivamus ornare pellentesque orci eget
+          rutrum. Fusce quis maximus quam. Fusce in purus sagittis, vehicula
+          lorem quis, vulputate dui.
+        </p>
+      </div>
+      <div>
+        <h2>How did we find the winners?</h2>
+        <p>
+          Pellentesque facilisis faucibus nisl at porta. Duis nec nisl tempor,
+          congue nisi quis, pretium dolor. Quisque sit amet tempus turpis. Nam
+          vel porta ipsum, vitae tempor nunc. Donec euismod lorem id arcu varius
+          dignissim quis ac neque. In sagittis ac massa quis tristique. Donec
+          neque quam, interdum vitae condimentum eu, maximus sed quam. Vivamus
+          semper magna turpis, sit amet mollis neque iaculis a. Praesent tempus
+          quis leo eu suscipit. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Curabitur pharetra diam ut
+          velit efficitur varius. Morbi pretium odio in dapibus venenatis. In
+          venenatis risus justo, in imperdiet turpis placerat a. Maecenas ac
+          imperdiet mauris. Curabitur in aliquet ante. Nulla rhoncus et purus a
+          semper. Cras leo nunc, pretium quis ex at, feugiat facilisis ex. In
+          egestas leo felis, nec aliquam est vestibulum eu. Aliquam placerat,
+          dolor vel facilisis efficitur, ligula metus viverra enim, id dictum
+          lectus ipsum eu sapien. Quisque consectetur felis id dui euismod,
+          vitae aliquet elit tristique. Vivamus ornare pellentesque orci eget
+          rutrum. Fusce quis maximus quam. Fusce in purus sagittis, vehicula
+          lorem quis, vulputate dui.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>

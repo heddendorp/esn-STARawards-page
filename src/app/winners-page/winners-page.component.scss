@@ -1,0 +1,33 @@
+@import "~@angular/material/theming";
+
+header {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  padding: 1rem;
+
+  h1 {
+    color: white;
+  }
+
+  .category {
+    color: white;
+    border: rgba(255, 255, 255, 0.5) solid 2px;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    @include mat-elevation-transition();
+    transition: background-color 0.28s ease;
+
+    &:hover {
+      @include mat-elevation(6);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .categories {
+    margin-bottom: 3rem;
+  }
+}

@@ -3,16 +3,36 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WinnersPageComponent } from './winners-page/winners-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { RouterModule, Routes } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { CountdownComponent } from './about-page/countdown/countdown.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
+const routes: Routes = [
+  { path: '', pathMatch: 'full', component: AboutPageComponent },
+  { path: 'winners', component: WinnersPageComponent },
+];
+
+const materialModules = [MatCardModule, MatButtonModule];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WinnersPageComponent,
+    AboutPageComponent,
+    CountdownComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
+    FlexLayoutModule,
+    materialModules,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

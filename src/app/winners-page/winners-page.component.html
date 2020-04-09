@@ -1,0 +1,29 @@
+<div fxLayout="column" style="min-height: 100%;">
+  <header fxLayout="column" fxLayoutGap="4rem">
+    <div fxFlexAlign="stretch" fxLayout="row" fxLayoutAlign="space-between">
+      <img alt="ESN logo" height="80px" src="/assets/logos/esn.png" />
+    </div>
+    <h1 class="mat-display-2" fxFlexAlign="center">2020 winners</h1>
+    <!--    <p fxFlexAlign="center">THe STARawards are split up across multiple categories</p>-->
+    <div fxLayout="row" fxLayoutAlign="center">
+      <div
+        class="categories"
+        fxHide.lt-md
+        gdAuto
+        gdColumns="repeat(auto-fit, minmax(350px, 1fr))"
+        gdGap="1rem"
+        style="max-width: 100%; width: 1200px;"
+      >
+        <div
+          *ngFor="let category of categories$ | async"
+          class="category"
+          fxLayout="column"
+        >
+          <strong>{{ category.title }}</strong>
+          <p>{{ category.description }}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main></main>
+</div>

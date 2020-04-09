@@ -1,0 +1,21 @@
+header {
+  padding: 1rem;
+  background: linear-gradient(to bottom, #076585, #fff 90%);
+
+  h1 {
+    color: white;
+  }
+
+  mat-card {
+    border-radius: 8px;
+
+    esn-countdown {
+      font-weight: bold;
+      font-size: large;
+    }
+  }
+}
+
+main {
+  padding: 2rem;
+}
