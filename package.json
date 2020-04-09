@@ -11,7 +11,13 @@
     "dev:ssr": "ng run star-awards:serve-ssr",
     "serve:ssr": "node dist/star-awards/server/main.js",
     "build:ssr": "ng build --prod && ng run star-awards:server:production",
-    "prerender": "ng run star-awards:prerender"
+    "prerender": "ng run star-awards:prerender",
+    "deploy": "netlify deploy -d dist/star-awards/browser",
+    "deploy:prod": "netlify deploy -d dist/star-awards/browser --prod",
+    "preupload": "yarn run prerender",
+    "preupload:prod": "yarn run prerender",
+    "upload": "yarn run deploy",
+    "upload:prod": "yarn run deploy:prod"
   },
   "private": true,
   "dependencies": {

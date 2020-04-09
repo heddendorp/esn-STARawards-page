@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import { DateTime } from 'luxon';
 import { Observable, of, Subject, timer } from 'rxjs';
-import { map, takeUntil } from 'rxjs/operators';
+import { map, startWith, takeUntil } from 'rxjs/operators';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 @Component({
@@ -30,16 +30,16 @@ export class CountdownComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      this.timer$ = timer(0, 1000);
+      this.timer$ = timer(0, 1000).pipe(takeUntil(this.destroyed$));
     }
     if (isPlatformServer(this.platformId)) {
       this.timer$ = of(0);
     }
     this.timeRemaining$ = this.timer$.pipe(
-      takeUntil(this.destroyed$),
       map(() =>
         this.end.diff(DateTime.local(), ['days', 'hours', 'minutes', 'seconds'])
       ),
+      startWith({ days: 0, hours: 0, minutes: 0, seconds: 0 }),
       map(
         (diff) =>
           `${diff.days
