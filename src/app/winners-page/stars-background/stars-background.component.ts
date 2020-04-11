@@ -3,8 +3,13 @@ import {
   Component,
   ElementRef,
   HostListener,
+  Inject,
+  PLATFORM_ID,
   ViewChild,
 } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { timer } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'esn-stars-background',
@@ -29,35 +34,39 @@ export class StarsBackgroundComponent implements AfterViewInit {
   elements: Square[] = [];
   runAnimation = true;
 
-  constructor() {}
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
 
   ngAfterViewInit(): void {
-    this.height = this.canvas.nativeElement.scrollHeight;
-    this.width = this.canvas.nativeElement.scrollWidth;
-    this.canvas.nativeElement.width = this.width;
-    this.canvas.nativeElement.height = this.height;
-    this.context = this.canvas.nativeElement.getContext('2d');
-    for (let x = 0; x < this.width; x++) {
-      const c = new Square();
-      this.init(c, true);
-      this.elements.push(c);
+    if (isPlatformBrowser(this.platformId)) {
+      this.height = this.canvas.nativeElement.scrollHeight;
+      this.width = this.canvas.nativeElement.scrollWidth;
+      this.canvas.nativeElement.width = this.width;
+      this.canvas.nativeElement.height = this.height;
+      this.context = this.canvas.nativeElement.getContext('2d');
+      for (let x = 0; x < this.width; x++) {
+        const c = new Square();
+        this.init(c, true);
+        this.elements.push(c);
+      }
+      this.animate();
     }
-    this.animate();
   }
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    this.height = this.canvas.nativeElement.scrollHeight;
-    this.width = this.canvas.nativeElement.scrollWidth;
-    this.canvas.nativeElement.width = this.width;
-    this.canvas.nativeElement.height = this.height;
-    if (this.elements.length > this.width) {
-      this.elements = this.elements.slice(0, this.width);
-    } else {
-      for (let x = 0; x < this.width - this.elements.length; x++) {
-        const c = new Square();
-        this.init(c, true);
-        this.elements.push(c);
+    if (isPlatformBrowser(this.platformId)) {
+      this.height = this.canvas.nativeElement.scrollHeight;
+      this.width = this.canvas.nativeElement.scrollWidth;
+      this.canvas.nativeElement.width = this.width;
+      this.canvas.nativeElement.height = this.height;
+      if (this.elements.length > this.width) {
+        this.elements = this.elements.slice(0, this.width);
+      } else {
+        for (let x = 0; x < this.width - this.elements.length; x++) {
+          const c = new Square();
+          this.init(c, true);
+          this.elements.push(c);
+        }
       }
     }
   }
@@ -77,13 +86,22 @@ export class StarsBackgroundComponent implements AfterViewInit {
     el.decay = (1 - speedFactor) / 1000;
     el.pos.x = goesLeft ? this.width + 5 : -5;
     el.pos.y = this.height * Math.random();
-    el.alpha = 0.5 + Math.random() * 0.5;
-    el.scale = 0.3 + Math.random() * 0.3;
+    el.alpha = 0.7 + Math.random() * 0.3;
+    el.scale = 0.5;
     if (el.pos.y < 80) {
       el.alpha = el.alpha * 0.7;
     }
     el.velocity =
       ((goesLeft ? Math.random() : -Math.random()) * speedFactor) / 2;
+    // if (first) {
+    const displacement = (first ? 0.5 : 0.4) * Math.random();
+    if (goesLeft) {
+      el.pos.x = this.width - this.width * displacement;
+    } else {
+      el.pos.x = this.width * displacement;
+    }
+    el.alpha = el.alpha * (1 - displacement * 2);
+    // }
   }
 
   animate() {
