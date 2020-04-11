@@ -51,6 +51,15 @@ export class StarsBackgroundComponent implements AfterViewInit {
     this.width = this.canvas.nativeElement.scrollWidth;
     this.canvas.nativeElement.width = this.width;
     this.canvas.nativeElement.height = this.height;
+    if (this.elements.length > this.width) {
+      this.elements = this.elements.slice(0, this.width);
+    } else {
+      for (let x = 0; x < this.width - this.elements.length; x++) {
+        const c = new Square();
+        this.init(c, true);
+        this.elements.push(c);
+      }
+    }
   }
 
   /*@HostListener('window:scroll', ['$event'])
@@ -66,9 +75,9 @@ export class StarsBackgroundComponent implements AfterViewInit {
     const goesLeft = Math.random() > 0.5;
     const speedFactor = (this.width - 300) / this.width;
     el.decay = (1 - speedFactor) / 1000;
-    el.pos.x = goesLeft ? this.width : 0;
+    el.pos.x = goesLeft ? this.width + 5 : -5;
     el.pos.y = this.height * Math.random();
-    el.alpha = 0.7 + Math.random() * 0.3;
+    el.alpha = 0.5 + Math.random() * 0.5;
     el.scale = 0.3 + Math.random() * 0.3;
     if (el.pos.y < 80) {
       el.alpha = el.alpha * 0.7;

@@ -1,5 +1,6 @@
 <div fxLayout="column" style="min-height: 100%;">
   <header fxLayout="column">
+    <esn-stars-background></esn-stars-background>
     <div
       fxFlexAlign="stretch"
       fxLayout="row"
@@ -8,12 +9,13 @@
     >
       <img alt="ESN logo" height="80px" src="/assets/logos/esn.png" />
     </div>
-    <img src="/assets/images/laurel.svg" alt="laurel wealth" height="100px" />
-    <h1 class="mat-display-2" fxFlexAlign="center" style="margin-bottom: 1rem;">
-      STARawards
-    </h1>
-    <h1 class="mat-display-2" fxFlexAlign="center">2020</h1>
-    <!--    <p fxFlexAlign="center">THe STARawards are split up across multiple categories</p>-->
+    <img
+      src="/assets/logos/awards_2020.svg"
+      alt="STARawards 2020"
+      height="250px"
+      style="margin-bottom: 4rem;"
+    />
+    <!--    <p fxFlexAlign="center">The STARawards are split up across multiple categories</p>-->
     <!--<div fxLayout="row" fxLayoutAlign="center">
       <div
         class="categories"
@@ -33,7 +35,9 @@
         </div>
       </div>
     </div>-->
-    <esn-stars-background></esn-stars-background>
+    <button mat-raised-button fxFlexAlign="center" routerLink="/">
+      ← Back to the overview
+    </button>
   </header>
   <main fxLayout="column" fxLayoutGap="2rem" style="margin-top: 2rem;">
     <p fxFlexAlign="center" style="max-width: 1200px;">
