@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CountdownComponent } from './about-page/countdown/countdown.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { StarsBackgroundComponent } from './winners-page/stars-background/stars-background.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: AboutPageComponent },
@@ -24,6 +25,7 @@ const materialModules = [MatCardModule, MatButtonModule];
     WinnersPageComponent,
     AboutPageComponent,
     CountdownComponent,
+    StarsBackgroundComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
