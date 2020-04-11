@@ -1,11 +1,21 @@
 @import "~@angular/material/theming";
 
 header {
-  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(30deg, #2e3192, #0058b4, #0079c3);
   padding: 1rem;
-
+  position: relative;
   h1 {
     color: white;
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .category {
@@ -29,5 +39,22 @@ header {
 
   .categories {
     margin-bottom: 3rem;
+  }
+}
+
+main {
+  .category {
+    .header {
+      position: sticky;
+      top: 0;
+      color: white;
+      background: linear-gradient(120deg, #2e3192, #9f2f8e, #e24678);
+      font-size: x-large;
+      font-weight: bold;
+      padding: 1rem;
+      p {
+        margin: 0;
+      }
+    }
   }
 }
