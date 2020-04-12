@@ -1,0 +1,73 @@
+<div fxLayout="column" style="min-height: 100%;">
+  <header fxLayout="column">
+    <esn-stars-background></esn-stars-background>
+    <div
+      fxFlexAlign="stretch"
+      fxLayout="row"
+      fxLayoutAlign="space-between"
+      style="margin-bottom: 4rem;"
+    >
+      <img alt="ESN logo" height="80px" src="/assets/logos/esn.png" />
+    </div>
+    <img
+      src="/assets/logos/awards_2020.svg"
+      alt="STARawards 2020"
+      height="250px"
+      style="margin-bottom: 4rem;"
+    />
+    <!--    <p fxFlexAlign="center">The STARawards are split up across multiple categories</p>-->
+    <!--<div fxLayout="row" fxLayoutAlign="center">
+      <div
+        class="categories"
+        fxHide.lt-md
+        gdAuto
+        gdColumns="repeat(auto-fit, minmax(350px, 1fr))"
+        gdGap="1rem"
+        style="max-width: 100%; width: 1200px;"
+      >
+        <div
+          *ngFor="let category of categories$ | async"
+          class="category"
+          fxLayout="column"
+        >
+          <strong>{{ category.title }}</strong>
+          <p>{{ category.description }}</p>
+        </div>
+      </div>
+    </div>-->
+    <button mat-raised-button fxFlexAlign="center" routerLink="/">
+      ← Back to the overview
+    </button>
+  </header>
+  <main
+    fxLayout="column"
+    fxLayoutGap="2rem"
+    style="margin-top: 2rem; padding: 2rem;"
+  >
+    <strong fxFlexAlign="center" style="max-width: 1200px;">
+      This draft of the winners page is for very little content. Basically just
+      one picture per category and three winners announced.
+    </strong>
+    <div
+      class="categories"
+      gdAuto
+      gdColumns="repeat(auto-fit, minmax(350px, 1fr))"
+      gdGap="2rem"
+    >
+      <mat-card *ngFor="let category of categories$ | async" fxLayout="column">
+        <mat-card-title>{{ category.title }}</mat-card-title>
+        <img mat-card-image src="https://picsum.photos/500/300" alt="Image" />
+        <mat-card-content>
+          <p>
+            1st place - ESN Lisbon <br />
+            2nd place - ESN Politecnico Milano <br />
+            3rd place - ESN KTU
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-stroked-button>Learn more</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </main>
+</div>

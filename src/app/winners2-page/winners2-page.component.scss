@@ -7,6 +7,7 @@ header {
   h1 {
     color: white;
   }
+
   .category {
     z-index: 1;
     color: white;
@@ -33,6 +34,24 @@ header {
 }
 
 main {
+  .categories {
+    mat-card {
+      border-radius: 8px;
+      overflow: hidden;
+      mat-card-title {
+        color: white;
+        background: linear-gradient(130deg, #2e3192, #9f2f8e, #e24678);
+        text-align: center;
+        margin: -16px -16px 0px -16px;
+        padding: 16px;
+      }
+      mat-card-content {
+        p {
+          font-size: larger;
+        }
+      }
+    }
+  }
   .category {
     .header {
       position: sticky;
