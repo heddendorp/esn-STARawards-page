@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Meta, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -34,7 +34,7 @@ const materialModules = [MatCardModule, MatButtonModule];
     FlexLayoutModule,
     materialModules,
   ],
-  providers: [],
+  providers: [Title, Meta],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
