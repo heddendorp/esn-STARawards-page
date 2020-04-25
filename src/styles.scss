@@ -24,6 +24,12 @@ $star-awards-theme: mat-light-theme(
   $star-awards-warn
 );
 
+$star-awards-dark-theme: mat-dark-theme(
+  $star-awards-primary,
+  $star-awards-accent,
+  $star-awards-warn
+);
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -38,4 +44,8 @@ body {
 body {
   margin: 0;
   font-family: Lato, "Helvetica Neue", sans-serif;
+}
+
+.dark-buttons {
+  @include mat-button-theme($star-awards-dark-theme);
 }

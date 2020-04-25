@@ -149,7 +149,7 @@
           "options": {
             "browserTarget": "star-awards:build:production",
             "serverTarget": "star-awards:server:production",
-            "routes": ["/", "/winners-draft", "/winners-draft-2"]
+            "routes": ["/", "/winners"]
           },
           "configurations": {
             "production": {}

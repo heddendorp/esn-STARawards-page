@@ -3,6 +3,36 @@
     fxLayout="column"
     fxLayoutAlign="space-between center"
     fxLayoutGap="2rem"
+    class="neu"
+    style="min-height: 40vh;"
+  >
+    <div fxFlexAlign="stretch" fxLayout="row" fxLayoutAlign="space-between">
+      <img alt="ESN logo" height="80px" src="/assets/logos/esn.png" />
+    </div>
+    <img src="/assets/logos/awards.svg" alt="STARawards" height="200px" />
+    <div class="card" fxLayout="column" fxLayoutGap="1.5rem">
+      <h1 class="mat-h1">STARawards 2020 are up!</h1>
+      <!--      <esn-countdown [end]="countDownEnd" fxFlexAlign="center"></esn-countdown>-->
+      <!--<button mat-raised-button routerLink="/winners-draft">
+        2020 winners draft 1
+      </button>-->
+      <button mat-raised-button routerLink="/winners">
+        Check out the 2020 winners
+      </button>
+      <!--<h3 class="mat-h3" style="margin-top: 2rem;">Previous STARawards</h3>
+      <div fxLayout="row" fxLayoutAlign="space-evenly" class="dark-buttons">
+        <a target="_blank" href="#" mat-stroked-button>2019</a>
+        <a target="_blank" href="#" mat-stroked-button>2018</a>
+        <a target="_blank" href="#" mat-stroked-button>2017</a>
+        <a target="_blank" href="#" mat-stroked-button>2016</a>
+      </div>-->
+    </div>
+  </header>
+  <!--<header
+    class="gradient"
+    fxLayout="column"
+    fxLayoutAlign="space-between center"
+    fxLayoutGap="2rem"
     style="min-height: 40vh;"
   >
     <div fxFlexAlign="stretch" fxLayout="row" fxLayoutAlign="space-between">
@@ -31,58 +61,42 @@
         <button color="primary" mat-stroked-button>2016</button>
       </div>
     </mat-card>
-  </header>
-  <main fxFlexAlign="center" fxLayout="row">
+  </header>-->
+  <main fxFlexAlign="center" fxLayout="row" class="mat-app-background">
     <div
       fxLayout="column"
       fxLayout.gt-sm="row"
       fxLayoutGap="2rem"
       style="max-width: 1200px;"
     >
-      <div>
+      <div fxFlex>
         <h2>What are the ESN STARawards?</h2>
         <p>
-          Pellentesque facilisis faucibus nisl at porta. Duis nec nisl tempor,
-          congue nisi quis, pretium dolor. Quisque sit amet tempus turpis. Nam
-          vel porta ipsum, vitae tempor nunc. Donec euismod lorem id arcu varius
-          dignissim quis ac neque. In sagittis ac massa quis tristique. Donec
-          neque quam, interdum vitae condimentum eu, maximus sed quam. Vivamus
-          semper magna turpis, sit amet mollis neque iaculis a. Praesent tempus
-          quis leo eu suscipit. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Curabitur pharetra diam ut
-          velit efficitur varius. Morbi pretium odio in dapibus venenatis. In
-          venenatis risus justo, in imperdiet turpis placerat a. Maecenas ac
-          imperdiet mauris. Curabitur in aliquet ante. Nulla rhoncus et purus a
-          semper. Cras leo nunc, pretium quis ex at, feugiat facilisis ex. In
-          egestas leo felis, nec aliquam est vestibulum eu. Aliquam placerat,
-          dolor vel facilisis efficitur, ligula metus viverra enim, id dictum
-          lectus ipsum eu sapien. Quisque consectetur felis id dui euismod,
-          vitae aliquet elit tristique. Vivamus ornare pellentesque orci eget
-          rutrum. Fusce quis maximus quam. Fusce in purus sagittis, vehicula
-          lorem quis, vulputate dui.
+          The STARawards is a project aimed at recognition and appreciation of
+          our volunteers’ work. Each year there are several categories in which
+          Local and National organisations can submit their initiative/
+          activity/ event/ project/ programme/ campaign. The best applications
+          are awarded a certificate signed by the president of ESN AISBL. This
+          certificate can be used towards the universities or other
+          stakeholders.
         </p>
       </div>
-      <div>
-        <h2>How did we find the winners?</h2>
+      <div fxFlex fxHide.gt-sm>
+        <img
+          src="/assets/images/winners.svg"
+          alt="Winners illustration"
+          width="100%"
+        />
+      </div>
+      <div fxFlex>
+        <h2>How are the applications evaluated?</h2>
         <p>
-          Pellentesque facilisis faucibus nisl at porta. Duis nec nisl tempor,
-          congue nisi quis, pretium dolor. Quisque sit amet tempus turpis. Nam
-          vel porta ipsum, vitae tempor nunc. Donec euismod lorem id arcu varius
-          dignissim quis ac neque. In sagittis ac massa quis tristique. Donec
-          neque quam, interdum vitae condimentum eu, maximus sed quam. Vivamus
-          semper magna turpis, sit amet mollis neque iaculis a. Praesent tempus
-          quis leo eu suscipit. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Curabitur pharetra diam ut
-          velit efficitur varius. Morbi pretium odio in dapibus venenatis. In
-          venenatis risus justo, in imperdiet turpis placerat a. Maecenas ac
-          imperdiet mauris. Curabitur in aliquet ante. Nulla rhoncus et purus a
-          semper. Cras leo nunc, pretium quis ex at, feugiat facilisis ex. In
-          egestas leo felis, nec aliquam est vestibulum eu. Aliquam placerat,
-          dolor vel facilisis efficitur, ligula metus viverra enim, id dictum
-          lectus ipsum eu sapien. Quisque consectetur felis id dui euismod,
-          vitae aliquet elit tristique. Vivamus ornare pellentesque orci eget
-          rutrum. Fusce quis maximus quam. Fusce in purus sagittis, vehicula
-          lorem quis, vulputate dui.
+          The Local or National organisations have to submit an application
+          describing their initiative/ activity/ event/ project/ programme/
+          campaign focusing on the core idea, execution, outcomes and the impact
+          on the target group. The applications are then evaluated by a jury
+          consisting of the members of the Network Committee and members of
+          other international teams active in the respective category’s field.
         </p>
       </div>
     </div>

@@ -16,7 +16,7 @@ import { Winners2PageComponent } from './winners2-page/winners2-page.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: AboutPageComponent },
   { path: 'winners-draft', component: WinnersPageComponent },
-  { path: 'winners-draft-2', component: Winners2PageComponent },
+  { path: 'winners', component: Winners2PageComponent },
 ];
 
 const materialModules = [MatCardModule, MatButtonModule];

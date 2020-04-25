@@ -39,16 +39,56 @@
       ← Back to the overview
     </button>
   </header>
-  <main
-    fxLayout="column"
-    fxLayoutGap="2rem"
-    style="margin-top: 2rem; padding: 2rem;"
-  >
-    <strong fxFlexAlign="center" style="max-width: 1200px;">
+  <main fxLayout="column" fxLayoutGap="2rem">
+    <!--<strong fxFlexAlign="center" style="max-width: 1200px;">
       This draft of the winners page is for very little content. Basically just
-      one picture per category and three winners announced.
-    </strong>
+      one picture per category and three winners announced. <br>
+      Also there ar two card styles that could be used.
+    </strong>-->
     <div
+      class="categories-neu"
+      gdAuto
+      gdColumns="repeat(auto-fit, minmax(350px, 1fr))"
+      gdGap="80px"
+    >
+      <div
+        class="card"
+        *ngFor="let category of categories$ | async"
+        fxLayout="column"
+      >
+        <h2>{{ category.title }}</h2>
+        <img src="/assets/images/graphic.jpg" alt="Image" />
+        <div
+          gdAuto
+          gdGap="0.5rem"
+          gdColumns="max-content auto"
+          gdAlignColumns="center"
+          style="margin: 40px;"
+        >
+          <p>1<sup>st</sup> place</p>
+          <div fxLayoutGap="0.5rem" fxLayout="column" fxLayoutAlign="end">
+            <p *ngFor="let winner of category.first">
+              <strong>{{ winner.project }}</strong> - {{ winner.organizer }}
+            </p>
+          </div>
+          <p>2<sup>nd</sup> place</p>
+          <div fxLayoutGap="0.5rem" fxLayout="column" fxLayoutAlign="end">
+            <p *ngFor="let winner of category.second">
+              <strong>{{ winner.project }}</strong> - {{ winner.organizer }}
+            </p>
+          </div>
+          <p>3<sup>rd</sup> place</p>
+          <div fxLayoutGap="0.5rem" fxLayout="column" fxLayoutAlign="end">
+            <p *ngFor="let winner of category.third">
+              <strong>{{ winner.project }}</strong> - {{ winner.organizer }}
+            </p>
+          </div>
+        </div>
+
+        <!--        <button mat-stroked-button>Learn more</button>-->
+      </div>
+    </div>
+    <!--<div
       class="categories"
       gdAuto
       gdColumns="repeat(auto-fit, minmax(350px, 1fr))"
@@ -68,6 +108,6 @@
           <button mat-stroked-button>Learn more</button>
         </mat-card-actions>
       </mat-card>
-    </div>
+    </div>-->
   </main>
 </div>
