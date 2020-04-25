@@ -7,6 +7,7 @@ export class DataService {
   categories = [
     {
       title: 'cooperationSTAR',
+      id: 'cooperation',
       first: [
         {
           project: 'ESN Brno United',
@@ -25,15 +26,11 @@ export class DataService {
           organizer:
             'ESN Milano Bocconi, ESN Milano IULM, ESN Milano Statale, ESN Milano Unicatt, ESN Milano-Bicocca, ESN Politecnico Milano',
         },
-        {
-          project: 'Statale',
-          organizer:
-            'ESN Milano Unicatt, ESN Milano-Bicocca, ESN Politecnico Milano',
-        },
       ],
     },
     {
       title: 'cultureSTAR',
+      id: 'culture',
       first: [
         {
           project: 'Incontro Culturale Erasmus (ICE) 2019',
@@ -56,6 +53,7 @@ export class DataService {
     },
     {
       title: 'educationSTAR',
+      id: 'education',
       first: [
         {
           project: '(EX)Change Your Lives',
@@ -78,6 +76,7 @@ export class DataService {
     },
     {
       title: 'employabilitySTAR',
+      id: 'employability',
       first: [
         {
           project: 'International Student Employability',
@@ -100,6 +99,7 @@ export class DataService {
     },
     {
       title: 'environmentSTAR',
+      id: 'environment',
       first: [
         {
           project: 'Zero Waste month',
@@ -121,6 +121,7 @@ export class DataService {
     },
     {
       title: 'fundraisingSTAR',
+      id: 'fundraising',
       first: [
         {
           project: 'South Eastern European Platform Baku',
@@ -143,6 +144,7 @@ export class DataService {
     },
     {
       title: 'healthSTAR',
+      id: 'health',
       first: [
         {
           project: 'National Erasmus Games 2019',
@@ -168,6 +170,7 @@ export class DataService {
     },
     {
       title: 'hrSTAR',
+      id: 'hr',
       first: [
         {
           project: 'Internal Buddy System Thessaloniki: The Game of the Crown',
@@ -189,6 +192,7 @@ export class DataService {
     },
     {
       title: 'itSTAR',
+      id: 'it',
       first: [
         {
           project: 'Fiesta',
@@ -210,6 +214,7 @@ export class DataService {
     },
     {
       title: 'mobilitySTAR',
+      id: 'mobility',
       first: [
         {
           project: 'Internationalisation and Mobility Conference',
@@ -235,6 +240,7 @@ export class DataService {
     },
     {
       title: 'socialinclusionSTAR',
+      id: 'socialinclusion',
       first: [
         {
           project: 'Ludàlia and ESN: towards a bidirectional normalization',
@@ -262,6 +268,7 @@ export class DataService {
     },
     {
       title: 'trainingSTAR',
+      id: 'training',
       first: [
         {
           project: 'Social Inclusion Weekend Vaasa 2019',
@@ -283,6 +290,7 @@ export class DataService {
     },
     {
       title: 'visibilitySTAR',
+      id: 'visibility',
       first: [
         {
           project:
