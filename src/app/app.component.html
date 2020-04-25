@@ -2,8 +2,20 @@
   <div fxFlex>
     <router-outlet></router-outlet>
   </div>
-  <footer fxLayout="row" fxLayoutAlign="space-between center">
-    <p>Footer content</p>
+  <footer
+    fxLayout.gt-sm="row"
+    fxLayout="column-reverse"
+    fxLayoutAlign="space-between center"
+    fxLayoutGap="2rem"
+    class="dark-buttons"
+  >
+    <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="start center">
+      <img src="/assets/logos/esn-star.png" alt="ESN star" height="48px" />
+      <div fxLayout="column" fxLayoutGap="0.5rem">
+        <p>© 2020 ESN Network Committee</p>
+        <p>created by ESN IT Committee</p>
+      </div>
+    </div>
     <a href="https://esn.org/" target="_blank" rel="noopener" mat-stroked-button
       >Visit esn.org</a
     >

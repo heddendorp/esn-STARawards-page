@@ -8,11 +8,77 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+$esn-dark-blue: (
+  50: #efe5fd,
+  100: #d4bff9,
+  200: #b794f6,
+  300: #9965f4,
+  400: #7e3ff2,
+  500: #6002ee,
+  600: #5300e8,
+  700: #3d00e0,
+  800: #1c00db,
+  900: #0000d6,
+  A100: #8c9eff,
+  A200: #536dfe,
+  A400: #3d5afe,
+  A700: #304ffe,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+$esn-magenta: (
+  50: #fbe2f0,
+  100: #f4b6d9,
+  200: #f085bf,
+  300: #ed4ea4,
+  400: #ec008e,
+  500: #ed0076,
+  600: #db0072,
+  700: #c4006c,
+  800: #af0068,
+  900: #86005f,
+  A100: #ff80ab,
+  A200: #ff4081,
+  A400: #f50057,
+  A700: #c51162,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$star-awards-primary: mat-palette($mat-indigo);
-$star-awards-accent: mat-palette($mat-pink, A200, A100, A400);
+$star-awards-primary: mat-palette($esn-dark-blue);
+$star-awards-accent: mat-palette($esn-magenta);
 
 // The warn palette is optional (defaults to red).
 $star-awards-warn: mat-palette($mat-red);
@@ -33,7 +99,15 @@ $star-awards-dark-theme: mat-dark-theme(
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($star-awards-theme);
+//@include angular-material-theme($star-awards-theme);
+@include mat-button-theme($star-awards-theme);
+@include mat-core-theme($star-awards-theme);
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Lato, "Helvetica Neue", sans-serif',
+);
+
+@include mat-base-typography($custom-typography);
 
 /* You can add global styles to this file, and also import other style files */
 
@@ -43,7 +117,6 @@ body {
 }
 body {
   margin: 0;
-  font-family: Lato, "Helvetica Neue", sans-serif;
 }
 
 .dark-buttons {

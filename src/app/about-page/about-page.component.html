@@ -10,13 +10,15 @@
       <img alt="ESN logo" height="80px" src="/assets/logos/esn.png" />
     </div>
     <img src="/assets/logos/awards.svg" alt="STARawards" height="200px" />
-    <div class="card" fxLayout="column" fxLayoutGap="1.5rem">
-      <h1 class="mat-h1">STARawards 2020 are up!</h1>
+    <div
+      class="card"
+      fxLayout="column"
+      fxLayoutGap="1.5rem"
+      fxLayoutAlign="start center"
+    >
+      <h1 class="mat-h1">Welcome to the home of ESN STARawards!</h1>
       <!--      <esn-countdown [end]="countDownEnd" fxFlexAlign="center"></esn-countdown>-->
-      <!--<button mat-raised-button routerLink="/winners-draft">
-        2020 winners draft 1
-      </button>-->
-      <button mat-raised-button routerLink="/winners">
+      <button mat-raised-button routerLink="/winners" fxFlexAlign="stretch">
         Check out the 2020 winners
       </button>
       <!--<h3 class="mat-h3" style="margin-top: 2rem;">Previous STARawards</h3>
@@ -28,40 +30,6 @@
       </div>-->
     </div>
   </header>
-  <!--<header
-    class="gradient"
-    fxLayout="column"
-    fxLayoutAlign="space-between center"
-    fxLayoutGap="2rem"
-    style="min-height: 40vh;"
-  >
-    <div fxFlexAlign="stretch" fxLayout="row" fxLayoutAlign="space-between">
-      <img alt="ESN logo" height="80px" src="/assets/logos/esn.png" />
-    </div>
-    <img src="/assets/logos/awards.svg" alt="STARawards" height="200px" />
-
-    <mat-card
-      fxLayout="column"
-      fxLayoutGap="1rem"
-      style="padding: 2rem; min-width: 50vw;"
-    >
-      <h2 class="mat-h2">2020 winners coming soon</h2>
-      <esn-countdown [end]="countDownEnd" fxFlexAlign="center"></esn-countdown>
-      <button color="accent" mat-raised-button routerLink="/winners-draft">
-        2020 winners draft 1
-      </button>
-      <button color="accent" mat-raised-button routerLink="/winners-draft-2">
-        2020 winners draft 2
-      </button>
-      <p>Previous STARawards</p>
-      <div fxLayout="row" fxLayoutAlign="space-evenly">
-        <button color="primary" mat-stroked-button>2019</button>
-        <button color="primary" mat-stroked-button>2018</button>
-        <button color="primary" mat-stroked-button>2017</button>
-        <button color="primary" mat-stroked-button>2016</button>
-      </div>
-    </mat-card>
-  </header>-->
   <main fxFlexAlign="center" fxLayout="row" class="mat-app-background">
     <div
       fxLayout="column"
@@ -69,7 +37,7 @@
       fxLayoutGap="2rem"
       style="max-width: 1200px;"
     >
-      <div fxFlex>
+      <div fxFlex fxLayout="column">
         <h2>What are the ESN STARawards?</h2>
         <p>
           The STARawards is a project aimed at recognition and appreciation of
@@ -80,12 +48,10 @@
           certificate can be used towards the universities or other
           stakeholders.
         </p>
-      </div>
-      <div fxFlex fxHide.gt-sm>
         <img
-          src="/assets/images/winners.svg"
-          alt="Winners illustration"
-          width="100%"
+          src="/assets/images/hug.jpg"
+          alt="People hugging"
+          style="width: 100%;"
         />
       </div>
       <div fxFlex>
@@ -98,6 +64,7 @@
           consisting of the members of the Network Committee and members of
           other international teams active in the respective category’s field.
         </p>
+        <img src="/assets/images/nec.jpg" alt="NEC" style="width: 100%;" />
       </div>
     </div>
   </main>

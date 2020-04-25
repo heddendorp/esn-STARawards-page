@@ -10,7 +10,7 @@ export class DataService {
       first: [
         {
           project: 'ESN Brno United',
-          organizer: 'SN MUNI Brno, ESN MENDELU and ESN VUT Brno',
+          organizer: 'ESN MUNI Brno, ESN MENDELU and ESN VUT Brno',
         },
       ],
       second: [
@@ -22,7 +22,8 @@ export class DataService {
       third: [
         {
           project: 'ESN a Milano Unita',
-          organizer: 'ESN Milano Bocconi. ESN Milano IULM, ESN Milano',
+          organizer:
+            'ESN Milano Bocconi, ESN Milano IULM, ESN Milano Statale, ESN Milano Unicatt, ESN Milano-Bicocca, ESN Politecnico Milano',
         },
         {
           project: 'Statale',
@@ -136,7 +137,7 @@ export class DataService {
         {
           project:
             'Fundraising to launch the Secretariat and to improve events for the international students',
-          organizer: 'ESN GEG Genova',
+          organizer: 'ESN Italy',
         },
       ],
     },
