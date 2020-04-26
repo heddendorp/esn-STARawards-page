@@ -223,11 +223,11 @@ export class DataService {
       ],
       second: [
         {
-          project: 'ESN TU IC -Erasmus in Estonian high schools',
+          project: 'Erasmus in Estonian high schools',
           organizer: 'ESN Estonia',
         },
         {
-          project: 'ESN Arel - Accessible Experiences Conference',
+          project: 'Accessible Experiences Conference',
           organizer: 'ESN Turkey',
         },
       ],
