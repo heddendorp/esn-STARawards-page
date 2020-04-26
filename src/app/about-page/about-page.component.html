@@ -1,4 +1,4 @@
-<div fxLayout="column" style="min-height: 100%;">
+<div fxLayout="column">
   <header
     fxLayout="column"
     fxLayoutAlign="space-between center"
@@ -17,27 +17,19 @@
       fxLayoutAlign="start center"
     >
       <h1 class="mat-h1">Welcome to the home of ESN STARawards!</h1>
-      <!--      <esn-countdown [end]="countDownEnd" fxFlexAlign="center"></esn-countdown>-->
       <button mat-raised-button routerLink="/winners" fxFlexAlign="stretch">
         Check out the 2020 winners
       </button>
-      <!--<h3 class="mat-h3" style="margin-top: 2rem;">Previous STARawards</h3>
-      <div fxLayout="row" fxLayoutAlign="space-evenly" class="dark-buttons">
-        <a target="_blank" href="#" mat-stroked-button>2019</a>
-        <a target="_blank" href="#" mat-stroked-button>2018</a>
-        <a target="_blank" href="#" mat-stroked-button>2017</a>
-        <a target="_blank" href="#" mat-stroked-button>2016</a>
-      </div>-->
     </div>
   </header>
-  <main fxFlexAlign="center" fxLayout="row" class="mat-app-background">
+  <main class="mat-app-background">
     <div
       fxLayout="column"
       fxLayout.gt-sm="row"
       fxLayoutGap="2rem"
-      style="max-width: 1200px;"
+      style="max-width: 1200px; margin-right: auto; margin-left: auto;"
     >
-      <div fxFlex fxLayout="column">
+      <div fxFlex="1" fxLayout="column">
         <h2>What are the ESN STARawards?</h2>
         <p>
           The STARawards are an initiative of the Erasmus Student Network aimed
@@ -57,7 +49,7 @@
           style="width: 100%;"
         />
       </div>
-      <div fxFlex fxLayout="column">
+      <div fxFlex="1" fxLayout="column">
         <h2>How are the applications evaluated?</h2>
         <p>
           The application consists of a brief description of the initiative/

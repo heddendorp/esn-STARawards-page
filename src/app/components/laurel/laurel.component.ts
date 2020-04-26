@@ -7,8 +7,11 @@ import {
 
 @Component({
   selector: 'esn-laurel',
-  templateUrl: './laurel.component.html',
-  encapsulation: ViewEncapsulation.ShadowDom,
+  template: `<img
+    src="/assets/images/{{ place }}.svg"
+    alt="{{ place }}"
+    height="100%"
+  />`,
   styles: [],
 })
 export class LaurelComponent {
@@ -17,6 +20,4 @@ export class LaurelComponent {
   @HostBinding('style.height') get height() {
     return this.size + 'px';
   }
-
-  constructor() {}
 }
