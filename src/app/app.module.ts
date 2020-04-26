@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { StarsBackgroundComponent } from './components/stars-background/stars-background.component';
 import { Winners2PageComponent } from './winners2-page/winners2-page.component';
+import { LaurelComponent } from './components/laurel/laurel.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: AboutPageComponent },
@@ -29,6 +30,7 @@ const materialModules = [MatCardModule, MatButtonModule];
     CountdownComponent,
     StarsBackgroundComponent,
     Winners2PageComponent,
+    LaurelComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

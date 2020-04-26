@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { DataService } from '../services/data.service';
+import { Category, DataService } from '../services/data.service';
 import { Meta, Title } from '@angular/platform-browser';
 import {
   animate,
@@ -33,7 +33,7 @@ import {
   ],
 })
 export class Winners2PageComponent implements OnInit {
-  categories$: Observable<any[]>;
+  categories$: Observable<Category[]>;
   entryVisible$ = new BehaviorSubject(false);
 
   constructor(

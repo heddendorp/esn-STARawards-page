@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class DataService {
-  categories = [
+  categories: Category[] = [
     {
       title: 'cooperationSTAR',
       id: 'cooperation',
@@ -316,7 +316,20 @@ export class DataService {
 
   constructor() {}
 
-  public getCategories() {
+  public getCategories(): Category[] {
     return this.categories;
   }
+}
+
+export interface Category {
+  id: string;
+  title: string;
+  first: Array<Entry>;
+  second: Array<Entry>;
+  third: Array<Entry>;
+}
+
+interface Entry {
+  project: string;
+  organizer: string;
 }
