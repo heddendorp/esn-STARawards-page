@@ -193,6 +193,12 @@
           </p>
         </ng-container>
       </div>
+      <a
+        *ngIf="category.public"
+        mat-stroked-button
+        routerLink="{{ category.id }}"
+        >Learn more</a
+      >
     </div>
     <!--<div class="card" fxLayout="column">
         <h2>Honourable mentions</h2>

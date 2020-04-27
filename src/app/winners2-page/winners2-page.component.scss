@@ -9,30 +9,6 @@ header {
   h1 {
     color: white;
   }
-
-  .category {
-    z-index: 1;
-    color: white;
-    border: rgba(255, 255, 255, 0.5) solid 2px;
-    border-radius: 6px;
-    padding: 12px;
-    cursor: pointer;
-    @include mat-elevation-transition();
-    transition: background-color 0.28s ease;
-
-    &:hover {
-      @include mat-elevation(6);
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    p {
-      margin: 0;
-    }
-  }
-
-  .categories {
-    margin-bottom: 3rem;
-  }
 }
 
 main {
@@ -85,8 +61,8 @@ main {
         bottom: 0;
       }
     }
-    button {
-      margin: 40px;
+    a {
+      margin: 0 40px 40px;
     }
   }
 }

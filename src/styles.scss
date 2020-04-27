@@ -100,8 +100,10 @@ $star-awards-dark-theme: mat-dark-theme(
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 //@include angular-material-theme($star-awards-theme);
-@include mat-button-theme($star-awards-theme);
 @include mat-core-theme($star-awards-theme);
+@include mat-button-theme($star-awards-theme);
+@include mat-toolbar-theme($star-awards-theme);
+@include mat-bottom-sheet-theme($star-awards-theme);
 
 $custom-typography: mat-typography-config(
   $font-family: 'Lato, "Helvetica Neue", sans-serif',

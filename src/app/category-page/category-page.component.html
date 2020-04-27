@@ -1,0 +1,60 @@
+<div>
+  <header fxLayout="column">
+    <img
+      alt="ESN logo"
+      height="80px"
+      src="/assets/logos/esn.png"
+      fxFlexAlign="start"
+      style="margin-bottom: 2rem;"
+    />
+    <h1 class="mat-display-2" fxFlexAlign="center">{{ category.title }}</h1>
+    <a mat-raised-button fxFlexAlign="center" routerLink="..">
+      ← Back to the overview
+    </a>
+  </header>
+  <main
+    gdAuto
+    gdColumns="repeat(auto-fit, minmax(600px, 1fr))"
+    gdColumns.xs="repeat(auto-fit, minmax(250px, 1fr))"
+    ngClass.xs="extra-small"
+    gdGap="80px"
+    gdGap.xs="40px"
+  >
+    <div class="card" *ngFor="let winner of category.first" fxLayout="column">
+      <img
+        src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
+        alt="{{ category.title }} - {{ winner.project }}"
+      />
+      <h1>
+        First place: {{ winner.organizer }} -
+        <strong>{{ winner.project }}</strong> - {{ winner.type }}
+      </h1>
+      <div fxFlex></div>
+      <p>{{ winner.longText }}</p>
+    </div>
+    <div class="card" *ngFor="let winner of category.second" fxLayout="column">
+      <img
+        src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
+        alt="{{ category.title }} - {{ winner.project }}"
+      />
+      <h1>
+        Second place: {{ winner.organizer }} -
+        <strong>{{ winner.project }}</strong> - {{ winner.type }}
+      </h1>
+      <div fxFlex></div>
+      <p>{{ winner.longText }}</p>
+    </div>
+    <div class="card" *ngFor="let winner of category.third" fxLayout="column">
+      <img
+        src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
+        alt="{{ category.title }} - {{ winner.project }}"
+      />
+      <h1>
+        Third place: {{ winner.organizer }} -
+        <strong>{{ winner.project }}</strong> - {{ winner.type }}
+      </h1>
+      <div fxFlex></div>
+      <p>{{ winner.longText }}</p>
+    </div>
+  </main>
+</div>
