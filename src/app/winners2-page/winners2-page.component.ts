@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Category, DataService } from '../services/data.service';
 import { Meta, Title } from '@angular/platform-browser';
 import {
@@ -9,6 +9,7 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'esn-winners2-page',
@@ -43,7 +44,9 @@ export class Winners2PageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.categories$ = of(this.dataService.getCategories());
+    this.categories$ = this.dataService
+      .getCategories()
+      .pipe(map((categories) => categories.filter((c) => !c.noCard)));
     this.titleService.setTitle('STARawards 2020');
     this.metaService.updateTag({
       name: 'og:title',

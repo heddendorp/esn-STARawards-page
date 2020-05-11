@@ -7,7 +7,6 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CountdownComponent } from './components/countdown/countdown.component';
-import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { StarsBackgroundComponent } from './components/stars-background/stars-background.component';
 import { Winners2PageComponent } from './winners2-page/winners2-page.component';
@@ -16,6 +15,7 @@ import { CategoryPageComponent } from './category-page/category-page.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { CategoryResolver } from './services/category.resolver';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: AboutPageComponent },
@@ -44,6 +44,7 @@ const materialModules = [
     CategoryPageComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),

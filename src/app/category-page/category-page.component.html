@@ -19,7 +19,7 @@
       fxLayout="column"
     >
       <img
-        src="https://via.placeholder.com/1000x500"
+        src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
         alt="{{ category.title }} - {{ winner.project }}"
       />
       <div fxLayout="row" fxLayoutGap=".5rem">
@@ -41,7 +41,6 @@
       class="secondary"
     >
       <div
-        fxFlex.gt-md="50"
         fxLayout="column"
         class="article"
         *ngFor="let winner of category.second"
@@ -61,10 +60,10 @@
         <p>{{ winner.longText }}</p>
       </div>
       <div
-        fxFlex.gt-md="50"
         fxLayout="column"
         class="article"
-        *ngFor="let winner of category.third"
+        *ngFor="let winner of category.third; last as isLast"
+        [fxFlex.gt-md]="isLast ? '1 0 50' : 50"
       >
         <img
           src="https://via.placeholder.com/1000x500"
@@ -81,8 +80,39 @@
         <p>{{ winner.longText }}</p>
       </div>
     </div>
+    <ng-container *ngIf="category?.honorable?.length">
+      <h2 class="mat-headline honorable">
+        <strong>Honorable mentions</strong> for the {{ category.title }}
+      </h2>
+      <div
+        fxLayout.gt-md="row"
+        fxLayout="column"
+        fxLayoutGap.gt-md="2rem"
+        class="secondary"
+      >
+        <div
+          fxLayout="column"
+          class="article"
+          *ngFor="let winner of category.honorable; last as isLast"
+          [fxFlex.gt-md]="isLast ? '1 0 50' : 50"
+        >
+          <img
+            src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
+            alt="{{ category.title }} - {{ winner.project }}"
+          />
+          <div fxLayout="row" fxLayoutGap=".5rem" fxLayoutAlign="start start">
+            <h1 fxFlex>
+              {{ winner.organizer }} - <strong>{{ winner.project }}</strong> -
+              {{ winner.type }}
+            </h1>
+          </div>
+          <div fxFlex></div>
+          <p>{{ winner.longText }}</p>
+        </div>
+      </div>
+    </ng-container>
 
-    <h2 class="mat-headline" style="margin-top: 4rem;">
+    <!--<h2 class="mat-headline" style="margin-top: 4rem;">
       More photos from the {{ category.title }} winners
     </h2>
 
@@ -107,6 +137,6 @@
       />
       <img src="https://via.placeholder.com/500/7" />
       <img src="https://via.placeholder.com/500/8" />
-    </div>
+    </div>-->
   </main>
 </div>
