@@ -12,49 +12,101 @@
       ← Back to the overview
     </a>
   </header>
-  <main
-    gdAuto
-    gdColumns="repeat(auto-fit, minmax(600px, 1fr))"
-    gdColumns.xs="repeat(auto-fit, minmax(250px, 1fr))"
-    ngClass.xs="extra-small"
-    gdGap="80px"
-    gdGap.xs="40px"
-  >
-    <div class="card" *ngFor="let winner of category.first" fxLayout="column">
+  <main>
+    <div
+      class="article"
+      *ngFor="let winner of category.first"
+      fxLayout="column"
+    >
       <img
-        src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
+        src="https://via.placeholder.com/1000x500"
         alt="{{ category.title }} - {{ winner.project }}"
       />
-      <h1>
-        First place: {{ winner.organizer }} -
-        <strong>{{ winner.project }}</strong> - {{ winner.type }}
-      </h1>
+      <div fxLayout="row" fxLayoutGap=".5rem">
+        <esn-laurel place="gold"></esn-laurel>
+        <h1 fxFlex>
+          {{ winner.organizer }} - <strong>{{ winner.project }}</strong> -
+          {{ winner.type }}
+        </h1>
+      </div>
+
       <div fxFlex></div>
       <p>{{ winner.longText }}</p>
     </div>
-    <div class="card" *ngFor="let winner of category.second" fxLayout="column">
-      <img
-        src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
-        alt="{{ category.title }} - {{ winner.project }}"
-      />
-      <h1>
-        Second place: {{ winner.organizer }} -
-        <strong>{{ winner.project }}</strong> - {{ winner.type }}
-      </h1>
-      <div fxFlex></div>
-      <p>{{ winner.longText }}</p>
+
+    <div
+      fxLayout.gt-md="row"
+      fxLayout="column"
+      fxLayoutGap.gt-md="2rem"
+      class="secondary"
+    >
+      <div
+        fxFlex.gt-md="50"
+        fxLayout="column"
+        class="article"
+        *ngFor="let winner of category.second"
+      >
+        <img
+          src="https://via.placeholder.com/1000x500"
+          alt="{{ category.title }} - {{ winner.project }}"
+        />
+        <div fxLayout="row" fxLayoutGap=".5rem" fxLayoutAlign="start start">
+          <esn-laurel place="silver"></esn-laurel>
+          <h1 fxFlex>
+            {{ winner.organizer }} - <strong>{{ winner.project }}</strong> -
+            {{ winner.type }}
+          </h1>
+        </div>
+        <div fxFlex></div>
+        <p>{{ winner.longText }}</p>
+      </div>
+      <div
+        fxFlex.gt-md="50"
+        fxLayout="column"
+        class="article"
+        *ngFor="let winner of category.third"
+      >
+        <img
+          src="https://via.placeholder.com/1000x500"
+          alt="{{ category.title }} - {{ winner.project }}"
+        />
+        <div fxLayout="row" fxLayoutGap=".5rem" fxLayoutAlign="start start">
+          <esn-laurel place="bronze"></esn-laurel>
+          <h1 fxFlex>
+            {{ winner.organizer }} - <strong>{{ winner.project }}</strong> -
+            {{ winner.type }}
+          </h1>
+        </div>
+        <div fxFlex></div>
+        <p>{{ winner.longText }}</p>
+      </div>
     </div>
-    <div class="card" *ngFor="let winner of category.third" fxLayout="column">
+
+    <h2 class="mat-headline" style="margin-top: 4rem;">
+      More photos from the {{ category.title }} winners
+    </h2>
+
+    <div
+      gdAuto="dense"
+      gdColumns="1fr"
+      gdColumns.sm="1fr 1fr"
+      gdColumns.gt-sm="repeat(3, 1fr)"
+      class="photos"
+    >
+      <img src="https://via.placeholder.com/500/1" />
+      <img gdRow="span 2" src="https://via.placeholder.com/500x1000/2" />
       <img
-        src="/assets/awards/{{ category.id }}/{{ winner.picture }}"
-        alt="{{ category.title }} - {{ winner.project }}"
+        gdColumn.gt-xs="span 2"
+        src="https://via.placeholder.com/1000x500/3"
       />
-      <h1>
-        Third place: {{ winner.organizer }} -
-        <strong>{{ winner.project }}</strong> - {{ winner.type }}
-      </h1>
-      <div fxFlex></div>
-      <p>{{ winner.longText }}</p>
+      <img src="https://via.placeholder.com/500/4" />
+      <img gdRow="span 2" src="https://via.placeholder.com/500x1000/5" />
+      <img
+        gdColumn.gt-xs="span 2"
+        src="https://via.placeholder.com/1000x500/6"
+      />
+      <img src="https://via.placeholder.com/500/7" />
+      <img src="https://via.placeholder.com/500/8" />
     </div>
   </main>
 </div>
