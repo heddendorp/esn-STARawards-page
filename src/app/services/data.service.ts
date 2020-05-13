@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { map, share } from 'rxjs/operators';
-import { Observable, of } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {map, share} from 'rxjs/operators';
+import {Observable, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -172,16 +172,17 @@ The project was vastly promoted in the media. At the end of the project, feedbac
   },
   {
     title: 'environmentSTAR',
-    public: false,
+    public: true,
     id: 'environment',
     first: [
       {
         project: 'Zero Waste month',
         organizer: 'ESN Strasbourg',
         type: 'Project',
-        picture: 'strasbourg.png',
-        longText:
-          'Zero Waste Month was a series of connected activities during November 2019. ESN Strasbourg organised five events, started with the screening of the film “Tomorrow” which talks about different positive alternatives for a life respectful of the planet, then followed by a flea-market, a conference on how to sort your waste and two activities where trash and cigarette butts were collected on the street.\nThe main objective was to make international students aware of the zero-waste lifestyle, to integrate them and spread awareness on how waste is sorted in their host city, to enable them to dress economically and ecologically and to get to know the different associations/departments of the city that work for the environment. \nESN Strasbourg worked with various partners for the project and used their venues for the activities.',
+        picture: 'strasbourg.jpg',
+        longText: `Zero Waste Month was a series of connected activities carried out during November 2019. ESN Strasbourg organised five events, starting with the screening of the film “Tomorrow” which talks about different positive alternatives for a life which respects the planet, followed by a flea-market, a conference on how to sort out your waste and two activities where rubbish and cigarette butts were collected on the street.
+The main objective was to make international students aware of the zero-waste lifestyle, to integrate them and to spread awareness on how waste is sorted out in their host city. We also aimed to enable them to dress economically and ecologically and to get to know the different associations/departments of the city that work for the environment.
+ESN Strasbourg worked on the project with various partners and used their venues for the activities.`,
       },
     ],
     second: [
@@ -189,9 +190,10 @@ The project was vastly promoted in the media. At the end of the project, feedbac
         project: 'Think Reusable - Save the Earth with ESN-EYE',
         organizer: 'ESN-EYE Lodz',
         type: 'Project',
-        picture: 'lodz.png',
-        longText:
-          'The project was focused on raising awareness of ‘zero-waste ideas’ and “being eco-friendly” among local and exchange students. Within two weeks full of events, ESN-EYE Lodz presented ‘reusable thinking’ and eco-friendly habits that should be introduced to everyday life. They organised various activities such as plant-based and zero-waste cooking, creating textile and eco-bags, remaking old clothes or manufacturing homemade gifts and beauty products.\nThe main objective of the project was to raise awareness of the planet’s condition. The volunteers wanted to show how everyday activities can significantly change our influence on the planet.\nDuring the project, ESN-EYE Lodz collaborated with two NGOs, the University and one company as well as Viva!, which is a Foundation International Movement for Animals.\n',
+        picture: 'lodz.jpg',
+        longText: `The project was focused on raising awareness about ‘zero-waste ideas’ and “being eco-friendly” among local and exchange students. Within two weeks full of events, ESN-EYE Lodz presented ‘reusable thinking’ and eco-friendly habits that should be introduced into everyday life. They organised various activities such as plant-based and zero-waste cooking, creating textile and eco-bags, remaking old clothes or manufacturing homemade gifts and beauty products.
+The main objective of the project was to raise awareness about the planet’s condition. The volunteers wanted to show how everyday activities can significantly change our influence on the planet.
+During the project, ESN-EYE Lodz collaborated with two NGOs, the University and one company as well as Viva!, which is an International Movement Foundation for animals.`,
       },
     ],
     third: [
@@ -199,12 +201,47 @@ The project was vastly promoted in the media. At the end of the project, feedbac
         project: 'ZeroWaste November',
         organizer: 'ESN Rijeka',
         type: 'Campaign',
-        picture: 'rijeka.png',
-        longText:
-          'ZeroWaste November was a one-month long social media campaign where helpful tips and advice were posted on a daily basis. They encouraged their followers to use alternative products to single-use ones, suggested ways of recycling and creating DIY products and explained general concepts related to sustainability and zero-waste.\nThe aim of the campaign was to raise awareness on excessive waste making and how to minimize personal waste and positively influence the audience of social media pages of ESN Rijeka with the overall goal of the betterment of the environment on a local level.\nDuring the campaign, ESN Rijeka collaborated with Špajza - a specialized store that sells zero waste products and groceries in bulk and Riperaj which is a space where people can go and fix their household items by themselves.\n',
+        picture: 'rijeka.jpg',
+        longText: `ZeroWaste November was a one-month long social media campaign where helpful tips and advice were posted daily. They encouraged their followers to use alternative products instead of single-use ones, suggested ways of recycling and creating DIY products and explained general concepts related to sustainability and zero-waste.
+The campaign aimed to raise awareness about excessive waste, how to minimise personal waste and positively influence the audience of social media pages of ESN Rijeka with the overall goal of improving the environment on a local level.
+During the campaign, ESN Rijeka collaborated with Špajza - a specialised store selling zero-waste products and groceries in bulk and Riperaj, which is a space where people can go and fix their household items by themselves.`,
       },
     ],
-    honorable: [],
+    honorable: [
+      {
+        project: 'Starting Kit Service',
+        organizer: 'ESN FINT and ESN INTO Tampere',
+        type: 'Project',
+        picture: 'tampere.jpg',
+        longText: `Starting Kit Service is a lending service which provides kitchen and bedroom items for incoming international students of Tampere University in the spirit of recycling and environmental sustainability. Student housing in Tampere does not include kitchen and bedroom necessities like frying pans or bed linen. Very few would bring such items with them from their home country, so each new student would have to buy these items for short-term use, maybe even for just one semester’s exchange.
+A small service fee is charged for the starting kits (5€) in addition to the deposit (20€). The deposit is ultimately returned to the student once the items are returned in their initial condition (clean and dry). ESN volunteers help new international students to find the necessities they need and handle the lending service while advising the new students during their first days on the campus.`,
+      },
+      {
+        project: 'NP1: Sustainability',
+        organizer: 'ESN EPF Lausanne and ESN Uni Lausanne',
+        type: 'Event',
+        picture: 'lausanne.jpg',
+        longText: `NP1: Sustainability was a National Platform organised with the lowest carbon footprint possible. To reach their goal, they supported green mobility by refunding train tickets for all participants, used only used or recycled materials, and the accommodation was provided in a local bunker.
+Their main aim was to reduce the event's carbon footprint as much as possible and to raise awareness among participants about sustainability in its multiple forms.
+During the platform, the sections collaborated with a company that promotes tap water as opposed to bottled water: Wasser für Wasser.`,
+      },
+      {
+        project: 'ESN Green',
+        organizer: 'ESN Porto',
+        type: 'Project',
+        picture: 'porto.jpg',
+        longText: `At the end of the Summer of 2018, ESN Porto concluded that many of their activities were not environmentally friendly and relied mostly on plastic and disposable materials. This lack of Green Attitude was put to an end when a working group called ESN Green was born. They started it by organising an ESN Green Week! A week dedicated to sustainable development and filled with activities to spread awareness about the topic. They organised events such as planting trees, veggie workshops, cleaning the beach, debates and much more. Each semester had a week with this green mark. They even created Instagram challenges with the catchphrase “Be Green, Keep Porto Clean”, by encouraging their students to use this slogan on their Instagram and share pictures while being “green” - recycling, biking, hiking and so on.`,
+      },
+      {
+        project: 'EcoMarathon',
+        organizer: 'ESN UNWE',
+        type: 'Event',
+        picture: 'unwe.jpg',
+        longText: `EcoMarathon is an event organised in the form of a seminar with presentations and open discussion. It is called а marathon because they go through different countries in the scope of the event. More specifically, this event is about getting to know how common environmental challenges and problems are tackled in different corners around the world.
+The event was organised for the first time in 2017, and since then it has become a tradition to have one edition each semester. The main aim of the activity is to encourage international students to learn more about ecology and sustainability.
+For the event, ESN UNWE collaborated with the University to obtain a suitable venue and with the University's ecology club called Eco Club UNWE.`,
+      },
+    ],
   },
   {
     title: 'fundraisingSTAR',
