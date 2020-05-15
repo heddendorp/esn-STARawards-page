@@ -91,6 +91,7 @@
           </p>
         </ng-container>
       </div>
+      <div fxFlex></div>
       <a
         *ngIf="category.public"
         mat-stroked-button
@@ -98,36 +99,5 @@
         >Learn more</a
       >
     </div>
-    <!--<div class="card" fxLayout="column">
-        <h2>Honourable mentions</h2>
-        &lt;!&ndash;<div
-          gdAuto
-          gdGap="0.5rem"
-          gdColumns="max-content auto"
-          gdAlignColumns="center"
-          style="margin: 40px;"
-        >
-          <p>1<sup>st</sup> place</p>
-          <div fxLayoutGap="0.5rem" fxLayout="column" fxLayoutAlign="end">
-            <p *ngFor="let winner of category.first">
-              <strong>{{ winner.project }}</strong> - {{ winner.organizer }}
-            </p>
-          </div>
-          <p>2<sup>nd</sup> place</p>
-          <div fxLayoutGap="0.5rem" fxLayout="column" fxLayoutAlign="end">
-            <p *ngFor="let winner of category.second">
-              <strong>{{ winner.project }}</strong> - {{ winner.organizer }}
-            </p>
-          </div>
-          <p>3<sup>rd</sup> place</p>
-          <div fxLayoutGap="0.5rem" fxLayout="column" fxLayoutAlign="end">
-            <p *ngFor="let winner of category.third">
-              <strong>{{ winner.project }}</strong> - {{ winner.organizer }}
-            </p>
-          </div>
-        </div>&ndash;&gt;
-
-        &lt;!&ndash;        <button mat-stroked-button>Learn more</button>&ndash;&gt;
-      </div>-->
   </main>
 </div>
