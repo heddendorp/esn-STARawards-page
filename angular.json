@@ -154,7 +154,8 @@
               "/winners",
               "/winners/network",
               "/winners/environment",
-              "/winners/it"
+              "/winners/it",
+              "/winners/culture"
             ]
           },
           "configurations": {

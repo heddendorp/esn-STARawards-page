@@ -120,12 +120,18 @@ The project was vastly promoted in the media. At the end of the project, feedbac
   },
   {
     title: 'cultureSTAR',
-    public: false,
+    public: true,
     id: 'culture',
     first: [
       {
-        project: 'Incontro Culturale Erasmus (ICE) 2019',
+        project: 'Erasmus Cultural Meeting 2019',
         organizer: 'ESN Italy',
+        type: 'Event',
+        longText: `The Incontro Culturale Erasmus (ICE) is a national event organised in Rome and is one of ESN Italy's most significant events, focused on their culture.
+Every year they organise it with the same purpose: to enhance the experience of more than 3000 International Students and ESNers by allowing them to live three amazing days in the heart of Italy.
+For ESN Italy, ICE is also the occasion to promote the Erasmus+ programme by highlighting the beauty of multiculturalism, spreading European values and boosting the European identity during the event with both formal events, such as the opening conference, and informal events, like the flag parade, taking place in the city centre.
+ESN Italy collaborated with many institutional partners during the event. Specifically, the project was supported by the European Parliament, the Representation of the European Commission in Italy, the Erasmus+/INDIRE National Agency, the Youth National Agency, the Italian Youth Council, the Municipality of Rome and the Metropolitan City of Rome, among others.`,
+        picture: 'italy.jpg',
       },
     ],
     second: [
@@ -133,15 +139,31 @@ The project was vastly promoted in the media. At the end of the project, feedbac
         project:
           'ESN Estonia x Võrumaa Youth Council: youth participation and culture',
         organizer: 'ESN Estonia',
+        type: 'Project',
+        longText: `Võrumaa Youth Council is a local organisation that represents youth in Võru county and is a member of the Estonian National Youth Council.
+As  last year was an election year, ESN Estonia wanted to focus more on youth participation and to show international students how young people can participate at a local level and at the same time help local youth council members to learn about other country's possibilities and best practices.
+They organised a two-day event in Võru because it's located in South Estonia, near the Latvian border, which is not a usual destination for the international students. The volunteers wanted to meet locals, so half of the programme was about culture.`,
+        picture: 'estonia.jpg',
       },
     ],
     third: [
       {
         project: 'Project UE Libre (Optional educational unit)',
         organizer: 'ESN Besançon',
+        type: 'Project',
+        longText: `Project UE libre (Optional educational unit) was initiated under the motive of Social Erasmus. As part of the innovative project led by the CROUS (Student Residence) of Besancon and in connection with the CLA (Center for Applied Linguistics), a third European credit system of the Optional educational unit on the cultural engagement of international students was born. This programme coordinated by an ESN association is unique in France and includes 40 to 60 international students per year: half of them were enrolled in the CLA, the other half in the other departments of the University of Franche-Comte. So far, 157 students have taken part in this project and 363 activities have been organised in conjunction with the partners. The project has been recognised at European level; which places the city of Besancon as the capital of intercultural engagement. Each student prepares and participates in at least 5 engagement activities in connection with 3 diverse audiences. Activities in this project include a variety of activities promoting an intercultural experience.`,
+        picture: 'besancon.jpg',
       },
     ],
-    honorable: [],
+    honorable: [
+      {
+        project: 'Discover Europe',
+        organizer: 'ESN Poland',
+        type: 'Project',
+        longText: `Discover Europe is one of the biggest pan-European student photo contests with a sixteen-year-long tradition. Its aim is to showcase different sides of Europe and promote its culture among young people through photography. The contest is divided into three categories - Citizen of Europe, Discover Architecture and Discover Nature. Each one describes the diversity in the world and shows new perspectives of everyday life. Supporting young artists and stimulating intercultural dialogue between Polish and international students has always been one of the most important premises of the contest.`,
+        picture: 'poland.jpg',
+      },
+    ],
   },
   {
     title: 'educationSTAR',
