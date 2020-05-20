@@ -82,7 +82,7 @@ The project was vastly promoted in the media. At the end of the project, feedbac
   },
   {
     title: 'cooperationSTAR',
-    public: false,
+    public: true,
     id: 'cooperation',
     first: [
       {

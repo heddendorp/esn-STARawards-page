@@ -101,8 +101,10 @@
           />
           <div fxLayout="row" fxLayoutGap=".5rem" fxLayoutAlign="start start">
             <h1 fxFlex>
-              {{ winner.organizer }} - <strong>{{ winner.project }}</strong> -
-              {{ winner.type }}
+              {{ winner.organizer }} - <strong>{{ winner.project }}</strong>
+              <ng-container *ngIf="winner.type"
+                >- {{ winner.type }}</ng-container
+              >
             </h1>
           </div>
           <p>{{ winner.longText }}</p>
