@@ -167,7 +167,7 @@ They organised a two-day event in Võru because it's located in South Estonia, n
   },
   {
     title: 'educationSTAR',
-    public: false,
+    public: true,
     id: 'education',
     first: [
       {
