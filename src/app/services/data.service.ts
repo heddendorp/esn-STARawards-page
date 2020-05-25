@@ -539,25 +539,41 @@ The Training Needs are collected every year by the training team and are analyse
   },
   {
     title: 'visibilitySTAR',
-    public: false,
+    public: true,
     id: 'visibility',
     first: [
       {
         project:
           'From #StavoltaVoto (#ThisTimeImVoting) to #StavoltaHoVotato (#ThisTimeIVoted)',
         organizer: 'ESN Italy',
+        longText: `The main aim of this campaign was informative, as ESN Italy wanted Erasmus students to be aware of the possibility to vote from abroad during their mobility period. Therefore, they were able to run the campaign successfully thanks to the collaboration with the Liaison Office of the European Parliament in Italy. Besides that, they promoted the importance of voting and a video was released with international students in Italy explaining their reasons for voting. In the end, on the 26th of May, they asked their volunteers to tag them on Instagram while going to vote or right after.`,
+        picture: 'italy.jpg',
       },
     ],
     second: [
-      { project: `International Volunteers' Day`, organizer: 'ESN Spain' },
+      {
+        project: `International Volunteers' Day`,
+        organizer: 'ESN Spain',
+        longText: `The aim of the campaign was to spread how ESN impacts society and the people that volunteer in the association. A bunch of volunteers participated in a video and explained how and why they joined ESN and what they have got from and felt during their experience. Apart from that, they also explained what ESN gives to society and how they can improve their professional skills within the association. The core idea was mainly to show what ESN brings to people and society by making the volunteers the main characters of the campaign.`,
+        picture: 'spain.jpg',
+      },
     ],
     third: [
       {
         project:
           'This is Me in Sign Language - 14th National Platform of ESN Croatia, ESN Rijeka',
         organizer: 'ESN Croatia',
+        longText: `During the 14th National Platform of ESN Croatia, members of ESN Croatia made a sign language video as a contribution during Social Inclusion Days. The main goal of this activity was to raise awareness about inclusive communication and create a positive image of sign languages while bringing us closer together. The result was increased awareness of including different kinds of communication than the ones we are used to, and even a few encouraged members of ESN Croatia continued to learn sign language.`,
+        picture: 'croatia.jpg',
       },
     ],
-    honorable: [],
+    honorable: [
+      {
+        organizer: 'ESN Utrecht',
+        project: 'ESN deck of playing cards',
+        longText: `During last Summer, ESN Utrecht started to rethink the concept of their goodie bags, that they hand out during Introduction day. The main goal of giving out goodie bags was to create more visibility for ESN and to promote their partners. However, they wanted to give something more to the international students, goodies that were longer lasting and would actually be useful during their exchange. The conclusion of their brainstorming was a deck of playing cards, which turned out to be their most effective campaign.`,
+        picture: 'utrecht.jpg',
+      },
+    ],
   },
 ];
