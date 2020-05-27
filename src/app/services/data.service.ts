@@ -205,23 +205,53 @@ Both workshops were developed by Eduk8, adapted for the participants and provide
   },
   {
     title: 'employabilitySTAR',
-    public: false,
+    public: true,
     id: 'employability',
     first: [
       {
         project: 'International Student Employability',
         organizer: 'ESN FINT',
+        type: 'Project',
+        longText: `The core idea of the International Student Employability project was to improve job opportunities for international students in Tampere and help local companies to reach international talents.
+Originally, a team was formed to develop the ErasmusIntern platform by promoting it among potential employees. Тhe team contacted local companies to involve them in the participation of the project (i.e. to place their opportunities on ErasmusIntern platform or to participate in employability events).
+Тhe team implemented a research survey to identify real student experiences, pains and needs first hand. It allowed correcting project goals and tackling employability problems more effectively.However, after contacting several companies in Tampere, the team identified more opportunities in the field of international students employability in the offline space.`,
+        picture: 'fint.jpg',
       },
     ],
-    second: [{ project: 'Career Mixers', organizer: 'ESN Utrecht' }],
+    second: [
+      {
+        project: 'Career Mixers',
+        organizer: 'ESN Utrecht',
+        type: 'Programme',
+        longText: `Career mixers consist of various events focused on the employability of international students in the Netherlands. Through informative fairs, workshops and dinners ESN Utrecht informed participants about the job market in the Netherlands, provided them with tools and taught them skills, as well as created an environment to get in contact with professionals and (international) alumni. Each of the mixers continue where the previous career mixer stopped in a creative successive programme.
+The aim of the career mixers is to get participants familiar with the Dutch job market and help them in the process of finding a job, as well as connecting them to alumni and professionals.
+`,
+        picture: 'utrecht.jpg',
+      },
+    ],
     third: [
       {
         project:
           'Conference: “International mobility and employability: advantages and disadvantages of an abroad experience”',
         organizer: 'ESN Milano IULM',
+        type: 'Event',
+        longText: `The main aim of the International mobility and employability conference was to promote the Erasmus+ programme.
+ESN Milano IULM wanted to promote the Erasmus+ grant among students and inform them about the benefits of going abroad for a study/work/voluntary experience.
+The main topic was the relationship between international mobility and employability, but topics such as personal growth, strong points of Italian students in an international environment or Social Responsibility perspectives in the financial world were also tackled.
+Every speaker in the event made a 15 minute-long speech, and then a Q&A session was held.`,
+        picture: 'milano.jpg',
       },
     ],
-    honorable: [],
+    honorable: [
+      {
+        project: 'ESN Robotics 101 Ekethon',
+        organizer: 'ESN TalTech IC',
+        type: 'Event',
+        longText: `The aim of the ESN Robotics 101 Ekethon event was to provide hands-on experience to a wide spectre of students, networking - establishing new acquaintances while creating something meaningful, elimination of the rivalship between technical and non-technical students, and creation of real devices supporting environmental sustainability.
+All students were actively contributing and gained unforgettable experiences including midnight visits to the robotics labs.`,
+        picture: 'taltech.jpg',
+      },
+    ],
   },
   {
     title: 'environmentSTAR',
