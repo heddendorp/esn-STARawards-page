@@ -389,27 +389,46 @@ A paper wall with logos of their partners is specially prepared for the event, w
   },
   {
     title: 'hrSTAR',
-    public: false,
+    public: true,
     id: 'hr',
     first: [
       {
         project: 'Internal Buddy System Thessaloniki: The Game of the Crown',
         organizer: 'ESN AUTH, ESN UOM THESSALONIKI, ESN IHU THESSALONIKI',
+        longText: `The internal buddy system is an initiative that was cooperatively created by the three sections of ESN Thessaloniki (ESN AUTH, ESN UOM THESSALONIKI, ESN IHU THESSALONIKI) in order to achieve better bonding and training between all our members. The idea behind this project was to create a whole story titled "The Game of the Crown" based on a special and fun concept which had a "royal" character.  Every two weeks, a new chapter of the story was given, which was accompanied by a task that volunteers had to fulfil before the next chapter was published. During this practice, the members were divided into groups of two "buddies" that had to cooperate and do the tasks, which were focused on bonding and training. After the fulfilment of each task, the story of the game kept on unfolding more and more with the aim of creating, in the end, a whole booklet that would be named "a Thesserasmus medieval novel", which would serve as a reminder of the things volunteers achieved while doing the tasks given.`,
+        picture: 'thessaloniki.jpg',
       },
     ],
     second: [
       {
         project: 'HR Community Management by HR Committee in ESN Poland',
         organizer: 'ESN Poland',
+        longText: `The initiative of the HR Committee is centred around the HR Community of ESN Poland and focuses on enhancing the community spirit and engagement by sharing best practices, motivating their members and sharing training opportunities, both in online and offline worlds. The Committee uses three main channels of communication: a Facebook group - ESN Poland HRelp Desk, a Messenger chat ‘ESN Local HR’ and the mailing list. There are several sub-projects going on at the same time to cater to everyone’s needs: "Coffee with HRs" online calls - monthly calls with the HR Community, "#LocalBoards" - a series of posts focusing on HR-related problems of Local Boards with proposed solutions, "Best practices sharing" - a series where the HR Committee members introduce a topic, asking the members of the community to share their practices from their own sections and "Training Opportunities for ESN Poland" - the HR Committee also prepares a monthly summary of Training Opportunities for the entirity of ESN Poland.`,
+        picture: 'poland.jpg',
       },
     ],
     third: [
       {
         project: 'Section Reference tasks guide',
         organizer: 'ESN Bulgaria',
+        longText: `The section reference tasks is a guide for what a stable and quality section within the network is doing or should be doing. This is a reference or a frame - the section is free to modify all of them according to their realities and needs. These tasks help the sections to create an action plan or train the local members to know what a local section should be focusing on. These tasks also serve as evaluation criteria for the ESN BG awards during the National Platform in June 2019. The document is based on the results from the Open Space from NBM in Bratislava and the Quality Assurance criteria for countries along with some things which they adapted to their reality in order to motivate their sections and give them help and ideas for their future goals.`,
+        picture: 'bulgaria.jpg',
       },
     ],
-    honorable: [],
+    honorable: [
+      {
+        project: 'Be a hero, become a Mentor!',
+        organizer: 'ESN UL Lodz',
+        longText: `In the context of recruiting mentors, ESN UL Lodz decided to work together with the International Student Office in order to reach more local students and involve them in their actions. Special training, workshops and interviews were conducted. After the workshops, mentors received red hoodies - the symbol of being a mentor. Mentors helped during the Orientation Weeks, participated in several events organised by the section and the International Office; Thanks to their contribution, they were awarded official diplomas and some small gifts from the University.`,
+        picture: 'lodz.jpg',
+      },
+      {
+        project: 'Training plan of ESN Spain',
+        organizer: 'ESN Barcelona UPF',
+        longText: `Spain together with the Spanish Network Care Team started a process to create a plan to describe the training path for their local volunteers. Specifically, they created a training plan that could fit all of their volunteers' needs. This document focuses on non-formal and informal education and how their volunteers can learn and improve different competences.`,
+        picture: 'spain.jpg',
+      },
+    ],
   },
   {
     title: 'itSTAR',
