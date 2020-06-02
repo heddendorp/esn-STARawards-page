@@ -533,7 +533,7 @@ As the aim is spreading the perspective about the mobility programmes of people 
   },
   {
     title: 'trainingSTAR',
-    public: false,
+    public: true,
     id: 'training',
     first: [
       {
@@ -575,14 +575,14 @@ The focal point was education and, particularly, the role ESN has in this field.
         type: 'Project/Strategy',
         longText: `The National Training Plan is developed every year as the strategy for the training of the volunteers of ESN Portugal. It encloses all the National Training Events, the local workshops and the Training Needs Analysis.
 The Training Needs are collected every year by the training team and are analysed. The needs are collected from a score of 1(not knowledgeable) to 7(fully knowledgeable) in different topics from writing a specific grant to working with photoshop. The Training Team analyses the results by area and by section. The analysis helps ESN Portugal prepare the training plan, which consists of national training events and local training sessions.`,
-        picture: '',
+        picture: 'portugal.jpg',
       },
       {
         project: 'COM 101 Training Webinar',
         organizer: 'ESN Turkey',
         type: 'Project',
         longText: `COM 101 Training Webinar was a wide range of online training programmes about hard skills that are necessary for Communication Managers and anyone willing and motivated to learn more about graphic design, video editing, content writing and social media management. Participants were able to learn the basics of the specified topics while they were getting encouraged to do and improve themselves more on these topics in the future.`,
-        picture: '',
+        picture: 'turkey.jpg',
       },
     ],
   },
