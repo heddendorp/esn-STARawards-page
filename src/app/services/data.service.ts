@@ -508,28 +508,59 @@ As the aim is spreading the perspective about the mobility programmes of people 
   },
   {
     title: 'socialinclusionSTAR',
-    public: false,
+    public: true,
     id: 'socialinclusion',
     first: [
       {
         project: 'Ludàlia and ESN: towards a bidirectional normalization',
         organizer:
           'ESN UAB Barcelona, ESN UPC Barcelona, ESN Barcelona UB, ESN Barcelona UPF',
+        type: 'Project',
+        longText: `The sections from Barcelona started two years ago in collaboration with the foundation “Ludàlia”. Ludàlia organises activities and events for people with intellectual disabilities in search of normalisation of free time and culture for this minority group. The collaboration with Ludàlia was mainly aimed to promote social inclusion, bidirectional learning, the demystification of stereotypes and to create a safe environment between groups based on equality, respect and mutual acceptance.`,
+        picture: 'barcelona.jpg',
       },
+    ],
+    second: [
       {
         project:
           'Visibility of the structural male chauvinist violence during international mobilities',
         organizer: 'ESN UCM, ESN UAH, ESN URJC, ESN UC3M, ESN UAM, ESN UAX',
+        type: 'Initiative',
+        longText: `The purpose of this initiative was to create a short film in order to raise awareness and give visibility to the physical and psychological violence that women suffer on a daily basis, especially during international mobilities. The key piece of this project has been the participation of international students of different backgrounds and cultures by sharing their personal experiences regarding gender inequality and sexism. The aim was to empower other women and start an open conversation about such a serious matter.`,
+        picture: 'ucm.jpg',
+      },
+      {
+        project: 'Social Tuesday',
+        organizer: 'ESN Granada',
+        type: 'Initiative',
+        longText: `This project is mainly composed of 3 activities which take place on the three first Tuesdays of the month. It aims to make a circle of social activities with the objective of creating a long-term influence on different sectors of the local society through international students. These three activities are: visiting and doing activities with the elderly at the daycare centre, helping and volunteering at an animal shelter and doing several activities with children at risk of social exclusion.`,
+        picture: 'granada.jpg',
       },
     ],
-    second: [{ project: 'Social Tuesday', organizer: 'ESN Granada' }],
     third: [
       {
         project: 'International students theatre',
         organizer: 'ESN Besançon',
+        type: 'Programme',
+        longText: `International students and ESNers meet up every week during the second semester to do theatre exercises and practice a play led by two volunteers, who have a theater background. During the weekly workshop, they prepare a play written by the two coordinators to be played in a local theatre at the end of the workshop. During each session, there is a relaxation, warming-up, theatre exercises, improvisations and scene rehearsals. The main aim is to help international students improve their French and especially French pronunciation through theatre.`,
+        picture: 'besancon.jpg',
       },
     ],
-    honorable: [],
+    honorable: [
+      {
+        project: 'ESN Makes a Family',
+        organizer: 'ESN Trabzon',
+        type: 'Initiative',
+        longText: `This initiative started with the purpose of raising money and then giving a scholarship to a student. Nevertheless, when ESN Trabzon found that a family of three children was in need, their main focus was changed and they decided to become their family. To do this, they helped them with their education by giving them free private lessons and took them to the cinema. They are also providing a monthly scholarship to them.`,
+        picture: 'trabzon.jpg',
+      },
+      {
+        project: 'SID Sign Language Campaign',
+        organizer: 'ESN Stockholm',
+        longText: `For this campaign, ESN Stockholm wanted to spread awareness about communication with hearing impairments, however, they thought that simply creating events for this goal would not be enough. SID events are great initiatives but they reach a rather small audience as it is limited to the people who are available to attend the physical event. Therefore, they decided that an online campaign would be a better option as it is available to everyone and not limited to a specific time or place.`,
+        picture: 'stockholm.jpg',
+      },
+    ],
   },
   {
     title: 'trainingSTAR',
