@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { map, share } from 'rxjs/operators';
-import { Observable, of } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {map, share} from 'rxjs/operators';
+import {Observable, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -462,7 +462,7 @@ A paper wall with logos of their partners is specially prepared for the event, w
   },
   {
     title: 'mobilitySTAR',
-    public: false,
+    public: true,
     id: 'mobility',
     first: [
       {
@@ -492,7 +492,7 @@ Each participant had a coordinator that helped with everything needed - gave all
         longText: `Accessible Experiences Conference is a project that was initiated in 2017 for the first time and is taken out every year in order to encourage people with physical obstacles to take part in the mobility programmes. It is a series of connected conferences since 2018 and the 3rd Accessible Experiences Conference has been organised this year.
 The aim of this project is to encourage people with physical obstacles to meet people that have the same obstacles and have experienced mobility programmes which is followed by informative sessions, presentations and discussion sessions on ways to improve the quantity and quality of the participation from disadvantaged backgrounds.
 As the aim is spreading the perspective about the mobility programmes of people with physical obstacles; which is the common belief of people not being able to and not being appropriate physically to participate in mobility programmes, which is wrong.`,
-        picture: '',
+        picture: 'turkey.jpg',
       },
     ],
     third: [
@@ -504,7 +504,15 @@ As the aim is spreading the perspective about the mobility programmes of people 
         picture: 'debrecen.jpg',
       },
     ],
-    honorable: [],
+    honorable: [
+      {
+        project: 'ERASMUS yourself!',
+        organizer: 'ESN Zagreb',
+        type: 'Programme',
+        longText: `The ERASMUS yourself! programme was designed to encourage outgoing mobility of the University of Zagreb students. During the winter semester, 14 events took place – workshops, presentations, panels and info desks for information sharing and consultations. The focus was on the Erasmus+ programme and the possibilities of going to study or work abroad in order to increase student mobility and to achieve a higher percentage of European Commission objectives in the field of education and mobility.`,
+        picture: 'zagreb.jpg',
+      },
+    ],
   },
   {
     title: 'socialinclusionSTAR',
