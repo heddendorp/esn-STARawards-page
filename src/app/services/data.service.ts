@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import {map, share} from 'rxjs/operators';
-import {Observable, of} from 'rxjs';
+import { Injectable } from '@angular/core';
+import { map, share } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -377,15 +377,56 @@ A paper wall with logos of their partners is specially prepared for the event, w
     title: 'healthSTAR',
     public: false,
     id: 'health',
-    first: [{ project: 'National Erasmus Games 2019', organizer: 'ESN Italy' }],
+    first: [
+      {
+        project: 'National Erasmus Games 2019',
+        organizer: 'ESN GEG Genova',
+        type: 'Event',
+        longText: `Three days, three sports, over 300 people, National Erasmus Games 2019 was a successful event for ESN Italy. Thanks to the support of ESAA, garagErasmus, Responsible Party, Cariparma Foundation and many other important commercial and institutional partners, they managed not only to promote an active and healthier lifestyle but also to show how sport can connect cultures. The event had as a primary purpose to bring together, in one city, students from all over the world through sports tournaments and cultural visits of the host city with the task of facilitating integration by reducing cultural diversity. The finals took place on the last day of the event, followed by the awards ceremony for the best teams that received trophies, medals and tickets to participate in the international phase of the event i.e. International Erasmus Games in Paris.`,
+        picture: 'italy.jpg',
+      },
+    ],
     second: [
-      { project: 'Shape Challenge with ESN-EYE', organizer: 'ESN-EYE Lodz' },
+      {
+        project: 'Shape Challenge with ESN-EYE',
+        organizer: 'ESN-EYE Lodz',
+        type: 'Event',
+        longText: `Due to the lack of sports motivation and unwillingness to take up sports activities, ESN-EYE Lodz decided to face the challenge and find a way to encourage students to work out. So, they came up with an idea to create a competition that did not require any special equipment and could have been done anywhere at any time. It involved using a path tracking application, for example, Endomondo, in order to create a shape on the map during the activity. More importantly, there were no restrictions on the type of activity. It could have been either running, walking, cycling, or any other type of sport during which the GPS could be used. As a result, people were choosing their preferred activities, as well as the shapes they wanted to create. Thanks to that, not only did they have fun, but also improve their mental and physical health.`,
+        picture: 'lodz.jpg',
+      },
     ],
     third: [
-      { project: 'ESN Gent: Silent Disco Yoga', organizer: 'ESN Gent' },
-      { project: `Autumn Erasmus Games '19`, organizer: 'ESN Lithuania' },
+      {
+        project: 'ESN Gent: Silent Disco Yoga',
+        organizer: 'ESN Gent',
+        type: 'Activity',
+        longText: `The main aim of this activity was to create awareness about mental well-being through a spiritual workout through the combination of music and yoga. Physical and mental sensations of Yoga are magnified through wireless headphones. They help you to completely focus inward and pay attention to your own practice.The activity was held at the studio of a professional spiritual yoga instructor.`,
+        picture: 'gent.jpg',
+      },
+      {
+        project: `Autumn Erasmus Games '19`,
+        organizer: 'ESN LSU',
+        type: 'Event',
+        longText: `Autumn Erasmus Games '19 was a national sports competition event of ESN Lithuania. They managed to gather international students from 10 sections of ESN Lithuania, from 3 different cities.The aim of the event was to raise awareness of the importance of regular physical activity and to engage students in physical activity and promote it for regular engagement on a daily basis.`,
+        picture: 'lsu.jpg',
+      },
     ],
-    honorable: [],
+    honorable: [
+      {
+        project: 'Meet our mascot',
+        organizer: 'ESN VU Amsterdam',
+        type: 'Event',
+        longText: `A few days before exams started at VU University Amsterdam, ESN VU Amsterdam decided to do something fun for their students by introducing them to their new mascot, "Adam the alpaca". They reached an alpaca farm and brought alpacas on campus so people could get to know real alpacas. This helped students to take a break from studying and enjoy the company of alpacas.`,
+        picture: 'amsterdam.jpg',
+      },
+      {
+        project: 'The ESN Malta Sports Programme',
+        organizer: 'ESN Malta',
+        type: 'Programme',
+        longText: `The ESN Malta Sports Programme is one of the most developed and oldest programmes that ESN Malta offers to all their members, international and local students. Thanks to these sports programmes their members get to keep fit and healthy during their time in Malta by being able to participate in a number of different sporting activities, such as football, volleyball, basketball, surfing, diving.`,
+        picture: 'malta.jpg',
+      },
+    ],
   },
   {
     title: 'hrSTAR',
