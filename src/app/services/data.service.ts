@@ -375,7 +375,7 @@ A paper wall with logos of their partners is specially prepared for the event, w
   },
   {
     title: 'healthSTAR',
-    public: false,
+    public: true,
     id: 'health',
     first: [
       {
