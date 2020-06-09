@@ -328,7 +328,7 @@ For the event, ESN UNWE collaborated with the University to obtain a suitable ve
   },
   {
     title: 'fundraisingSTAR',
-    public: false,
+    public: true,
     id: 'fundraising',
     first: [
       {
